@@ -2,4 +2,12 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-return {}
+return {
+  {
+    'echasnovski/mini.nvim',
+    version = '*',
+    config = function()
+      require("mini.pairs").setup {}
+    end,
+  }
+}
